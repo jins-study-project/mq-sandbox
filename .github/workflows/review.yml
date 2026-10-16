@@ -1,0 +1,8 @@
+name: review
+on:
+  pull_request:
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "non-required check that fails" && exit 1
